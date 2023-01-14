@@ -7,194 +7,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Healthy India</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
 </head>
 
 <body>
 
-    <div class="banner">
-        <nav class="navbar">
-            <div class="left-nav">
-                <img src="Benjamin.png" alt="">
-            </div>
-            <div class="right-nav">
-                <ul>
-                    <li><a href=""> Home</a></li>
-                    <li><a href=""> About</a></li>
-                    <li><a href=""> Services</a></li>
-                    <li><a href=""> Help</a></li>
-                    <li><a href=""> Contact Us</a></li>
-                    <button class="signin-btn"><span></span> Sign in</button>
+    <div id="header">
+
+        <div class="container">
+            <nav>
+                <img src="Benjamin.png" alt="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Portfolio</a></li>
+                    <li><a href="">Contact</a></li>
+                    <i class="fa fa-times" onclick="closemenu()"></i>
+                    
+                
+
                 </ul>
-            </div>
-        </nav>
+                <i class="fa fa-bars" onclick="openmenu()"></i>
+              
+          
+            </nav>
+
+   
+        </div>
+
     </div>
 
-    <section class="companies">
 
-        <div class="comp">
-            <div class="div-h2">
-                <center>
-                    <h2>OUR CONTIRBUTERS</h2>
-                </center>
-            </div>
+    <script>
 
-            <div class="cont1">
+        var sidemenu = document.getElementById('sidemenu');
 
-                <div class="contribute-data">
-                    <div class="data1 msoft">
-                        <img src="foreverr.png" alt="" class="ms">
-                    </div>
-                    <div class="data1-pms ">
-                        <p class="ms-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eveniet
-                            ipsam vitae
-                            voluptatum
-                            dicta hic deserunt nostrum soluta quae veniam facilis, tempore vero vel dolores minus non
-                            earum
-                            ea quo assumenda fugit animi itaque est? Ducimus ea possimus neque reprehenderit dignissimos
-                            vitae voluptates voluptas optio? Quae, eaque! Nam reiciendis quod nesciunt consequuntur
-                            magnam
-                            non laboriosam voluptatem, molestias velit, doloribus soluta?</p>
-                        <button class="more-btnd">More</button>
-                        <p class="date">12 Feb 2022</p>
-                    </div>
+        function openmenu(){
+            sidemenu.style.right = '0';
+        }
+        function closemenu(){
+            sidemenu.style.right = '-200px';
+        }
 
-
-                </div>
-
-                <div class="contribute-data">
-
-                    <div class="data1-pama ">
-                        <p class="amazon-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eveniet
-                            ipsam vitae
-                            voluptatum
-                            dicta hic deserunt nostrum soluta quae veniam facilis, tempore vero vel dolores minus non
-                            earum
-                            ea quo assumenda fugit animi itaque est? Ducimus ea possimus neque reprehenderit dignissimos
-                            vitae voluptates voluptas optio? Quae, eaque! Nam reiciendis quod nesciunt consequuntur
-                            magnam
-                            non laboriosam voluptatem, molestias velit, doloribus soluta?</p>
-                        <button class="more-btnd">More</button>
-                        <p class="date">12 Feb 2022</p>
-
-                    </div>
-                    <div class="data1 amaz">
-                        <img src="amazon.png" alt="" class="amazon">
-                    </div>
-
-
-                </div>
-
-                <div class="contribute-data">
-                    <div class="data1 afor">
-                        <img src="ms.png" alt="" class="forever">
-                    </div>
-                    <div class="data1-pfor">
-                        <p class=" forever-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-                            eveniet ipsam vitae
-                            voluptatum
-                            dicta hic deserunt nostrum soluta quae veniam facilis, tempore vero vel dolores minus non
-                            earum
-                            ea quo assumenda fugit animi itaque est? Ducimus ea possimus neque reprehenderit dignissimos
-                            vitae voluptates voluptas optio? Quae, eaque! Nam reiciendis quod nesciunt consequuntur
-                            magnam
-                            non laboriosam voluptatem, molestias velit, doloribus soluta?</p>
-                        <button class="more-btnd">More</button>
-                        <p class="date">12 Feb 2022</p>
-
-                    </div>
-
-
-                </div>
-
-                <div class="contribute-data">
-
-                    <div class="data1-ptata ">
-                        <p class="tata-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eveniet
-                            ipsam vitae
-                            voluptatum
-                            dicta hic deserunt nostrum soluta quae veniam facilis, tempore vero vel dolores minus non
-                            earum
-                            ea quo assumenda fugit animi itaque est? Ducimus ea possimus neque reprehenderit dignissimos
-                            vitae voluptates voluptas optio? Quae, eaque! Nam reiciendis quod nesciunt consequuntur
-                            magnam
-                            non laboriosam voluptatem, molestias velit, doloribus soluta?</p>
-                        <button class="more-btnd">More</button>
-                        <p class="date">12 Feb 2022</p>
-
-
-                    </div>
-                    <div class="data1 atata">
-                        <img src="tata.png" alt="" class="tata">
-                    </div>
-
-
-                </div>
-
-
-            </div>
-        </div>
-
-    </section>
-
-
-    <section class="information">
-
-        <div class="info-h2">
-            <h2>ACHIEVEMENTS</h2>
-        </div>
-     
-
-        <div class="row">
-            <div class="cols">
-                <div class="card">
-                    <div class="inner-box">
-                        <div class="card-front cardd">
-                            <span>Shiana</span>
-                        </div>
-                        <div class="card-back">
-                            <p>Co-Founder</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="inner-box">
-                        <div class="card-front2 cardd">
-                            <span>Shiana</span>
-                        </div>
-                        <div class="card-back">
-                            <p>Co-Founder</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="inner-box">
-                        <div class="card-front3 cardd">
-                            <span>Shiana</span>
-                        </div>
-                        <div class="card-back">
-                            <p>Co-Founder</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    </script>
+    
 
 
 </body>
