@@ -8,10 +8,6 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body{
-    background: #080808;
-    color: #fff;
-}
 
 
 #header{
@@ -21,6 +17,7 @@ body{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    box-shadow: 0 5px 5px black;
 }
 
 .container{
@@ -96,6 +93,101 @@ nav .fa{
     display: none;
 }
 
+
+
+
+/* ----------------  Companies ----------------- */
+
+.companies{
+    width: 100%;
+    height: fit-content;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) , url(little-plant.jpg) ; 
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.companies h2{
+    text-align: center;
+    text-shadow: 5px 5px 13px white;
+    color: white;
+    font-size: 54px;
+    padding: 34px 0;
+    padding-bottom: 61px;
+}
+
+.company-data{
+    width: 100%;
+
+    display: flex;
+ 
+
+
+}
+
+.comp-img{
+    flex-basis: 30%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+ 
+
+}
+
+.comp-img img{
+    width: 320px;
+}
+
+.comp-info{
+    background-color: rgb(248, 222, 30);
+    display: flex;
+    border-radius: 14px 0 0 14px;
+    height: fit-content;
+    padding: 2%;
+    flex-basis: 70%;
+    
+
+
+}
+
+.comp-info-p{
+    align-items: center;
+    padding: 4% 3%;
+   
+}
+
+.comp-info p{
+    font-size: 18px;
+}
+
+.more{
+    background: transparent;
+    color: black;
+    width: 100px;
+    height: 45px;
+    border-radius: 30px;
+    border: 2px solid brown;
+    outline: none;
+    transition: 0.3s;
+    margin-top: 2%;
+    font-size: 16px;
+}
+
+.more:hover{
+    background-color: brown;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* ---------- Responsive --------- */
+
+
+
 @media only screen and (max-width:998px){
     #header{
         background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) ,url(hope2.jpg);
@@ -119,6 +211,7 @@ nav .fa{
 
     } */
 }
+
 
 
 @media only screen and (max-width:782px){
@@ -159,3 +252,35 @@ nav .fa{
     }
 
 }
+
+
+
+@media only screen and (max-width:700px){
+
+
+    .company-data{
+        display: block;
+    }
+
+    .comp-info{
+        border-radius: 5px;
+        margin: 10px;
+    }
+
+    .companies h2{
+        font-size: 34px;
+    }
+
+    .more{
+        display: block;
+        margin: auto;
+    }
+
+
+
+
+
+
+}
+
+
