@@ -13,7 +13,7 @@
 
 #header{
     width: 100%;
-    height: 100vh;
+    height: 95vh;
     background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(hope.jpg);
     background-size: cover;
     background-position: center;
@@ -236,8 +236,193 @@ nav .fa{
 }
 
 
+/* --------------- ACHEIVEMENTS -------------- */
 
 
+.container2{
+    width: 100%;
+    height: 100%;
+    background-color: #0e5d1d;
+}
+
+.container2 h1{
+    color: #333;
+    text-align: center;
+    margin: 100px auto 50px;
+    font-family: sans-serif;
+}
+
+.row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.col{
+    flex-basis: 30%;
+    overflow: hidden;
+}
+
+.card   {
+    width: 350px;
+    height: 350px;
+    margin: auto;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.inner-box{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+
+}
+
+
+.card-front, .card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+/* 
+.card-front{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(person1.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.card-front span{
+    display: inline-block;
+    width: 100px;
+    padding: 14px 0;
+    margin-top: 160px;
+    border-radius: 4px;
+    background: #fff;
+    color: #333;
+}
+
+.card-back{
+    background: #1c1f54;
+    transform: rotateX(180deg);
+}
+
+.card:hover .inner-box{
+    transform: rotateX(-180deg);
+}
+ */
+
+
+#portfolio{
+    padding: 50px 0;
+
+}
+
+.work-list{
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    transition: 0.6s;
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6),#00ff33a2);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    transition: 0.4s;
+}
+.work:hover img{
+    transform: scale(1.1);
+
+}
+
+.work:hover .layer{
+    height: 100%;
+}
+
+
+
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: white;
+
+}
+
+.layer p{
+    color: white;
+    font-size: 14px;
+
+}
+
+.layer a{
+    margin-top: 20px;
+    color: #00ff33;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.btn-see{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #00ff33;
+    padding: 14px 50px;
+    border-radius: 6px;
+    color: black;
+    text-decoration: none;
+    transition: background 0.5s;
+
+}
+
+.btn-see:hover{
+    background: #00ff33;
+
+}
+
+.container5{
+    padding: 10px 5%;
+    flex-wrap: wrap;
+}
 
 
 
@@ -518,6 +703,27 @@ nav .fa{
 
 
 }
+
+@media only screen and (max-width:700px){
+
+    .work-list{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .work img{
+        width: 190px;
+    }
+}
+
+@media only screen and (max-width:700px){
+    .work img{
+        width: 300px;
+    }
+
+}
+
+
 
 
 
