@@ -18,9 +18,9 @@
 
         <div class="container">
             <nav>
-                <img src="Benjamin.png" alt="" class="logo">
+                <img src="Sun and water.png" alt="" class="logo">
                 <ul id="sidemenu">
-                    <li><a href="">Hogfdgdfgme</a></li>
+                    <li><a href="">Home</a></li>
                     <li><a href="">About</a></li>
                     <li><a href="">Services</a></li>
                     <li><a href="">Portfolio</a></li>
@@ -33,11 +33,39 @@
                 </ul>
                 <i class="fa fa-bars" onclick="openmenu()"></i>
 
-                <div class="popup" id="popup">
+                <!-- <div class="popup" id="popup">
                     <img src="tick.png">
                     <h2 class="h2-pop">Thank You!</h2>
                     <p>Your details has been successfully submitted. Thanks!</p>
                     <button type="button" onclick="closePopup()">OK</button>
+                </div> -->
+                <div class="popup" id="popup">
+                    <svg onclick="closePopup()" id="svg-wrong" class="svg-wrong" xmlns="http://www.w3.org/2000/svg"
+                        width="16" height="16" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                        <path
+                            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                    </svg>
+
+                    <h2 class="signup-h2" >Sign Up</h2>
+                    <div class="first-sign">
+                        <div class="second-sign">
+                            <input type="text" class="inp-signn f-name" placeholder="First Name">
+                            <input type="text" class="inp-signn l-name" placeholder="Last Name">
+                        </div>
+                        <input type="email" class="inp-signn email-sign" placeholder="Email">
+                        <div class="third-sign">
+                            <p>Gender: </p>
+                            <label for="">Male</label><input type="radio" name="" id="" class="radio-sign">
+                            <label for="">Female</label><input type="radio" name="" id="" class="radio-sign">
+                            <label for="">Prefer not to say</label><input type="radio" name="" id="" class="radio-sign">
+                        </div>
+                        <input type="number" class="inp-signn number-otp" placeholder="Enter your Number">
+                        <input type="number" class="inp-signn otp" placeholder="6 Digit OTP">
+                        <p class="already">Already have an Account : <a href="#">Sign in</a></p>
+                        <button id="submit-sign">Submit</button>
+                    </div>
+
                 </div>
 
 
@@ -177,6 +205,22 @@
         <div class="donate-1">
             <div class="donate-2">
                 <div class="donate-img">
+                    <div class="donate-helping">
+                        <div class="donate-help">
+                            <h2 class="donate-texts text-h2">Help those</h2>
+                            <h4 class="donate-texts text-h4">who really needs</h4>
+                            <br class="donate-texts">
+                            <p class="donate-texts">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+                                saepe delectus, suscipit
+                                quo nihil nisi quaerat temporibus at commodi expedita a eos, laborum illum fugiat!</p>
+
+                            <button class="see-help">See more</button>
+
+                        </div>
+                    </div>
+
+
+
 
                 </div>
                 <div class="donate-form">
@@ -185,28 +229,28 @@
                         <div class="input-field" id="namefield">
                             <i class="fa fa-solid fa-user"></i>
                             <input type="text" class="inp" placeholder="Name">
-    
+
                         </div>
                         <div class="input-field">
                             <i class="fa fa-solid fa-envelope"></i>
                             <input type="email" class="inp" placeholder="john@gmail.com">
-    
+
                         </div>
                         <div class="input-field">
                             <img src="mastercard.png">
                             <input type="password" class="inp inp-cardnum" placeholder="Card Number">
-    
+
                         </div>
-                  
+
                         <div class="input-field inp-cvv">
                             <img src="atm.png" alt="">
                             <input type="number" class="inp " placeholder="CVV Number">
-    
+
                         </div>
                         <div class="input-field">
                             <i class="fa fa-solid fa-lock"></i>
                             <input type="password" class="inp" placeholder="Password">
-    
+
                         </div>
 
                         <hr>
@@ -218,7 +262,7 @@
                     </div>
 
 
-                    
+
 
                 </div>
             </div>
@@ -251,9 +295,13 @@
             popup.classList.remove('open-popup');
         }
 
-        if(visible == 'visible'){
+        if (visible == 'visible') {
             sidemenu.style.display = 'none';
         }
+
+     
+
+
 
 
     </script>
