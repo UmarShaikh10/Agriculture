@@ -538,6 +538,12 @@ nav .fa {
     text-shadow: 4px 4px 7px #584e4e;
 }
 
+#popup{
+    position: fixed;
+    z-index: 100;
+    box-shadow: 4px 8px 15px black;
+}
+
 
 
 .layer h3 {
