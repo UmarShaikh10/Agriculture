@@ -29,6 +29,12 @@
     transform: translate(-50%, -50%) scale(1);
 }
 
+#popup{
+    position: fixed;
+    z-index: 100;
+    box-shadow: 4px 8px 15px black;
+}
+
 /* .popup img {
     width: 100px;
     margin-top: -50px;
@@ -197,6 +203,7 @@ label {
 .container {
     padding: 10px 10%;
     box-shadow: 0 5px 10px black;
+    background: #ffffff26;
 
 }
 
@@ -538,12 +545,6 @@ nav .fa {
     text-shadow: 4px 4px 7px #584e4e;
 }
 
-#popup{
-    position: fixed;
-    z-index: 100;
-    box-shadow: 4px 8px 15px black;
-}
-
 
 
 .layer h3 {
@@ -594,6 +595,7 @@ nav .fa {
 .container5 {
     padding: 10px 5%;
     background-color: wheat;
+    height: 123vh;
 }
 
 /* ------------------- Donation ------------ */
@@ -602,8 +604,10 @@ nav .fa {
 
 .donation {
     width: 100%;
-    height: 80vh;
-    background-color: rgb(227, 151, 176);
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(waterfruit.jpg);
+    background-position: center;
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -614,6 +618,8 @@ nav .fa {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    top: -336px;
 }
 
 .pay-btn {
@@ -906,7 +912,7 @@ font-size: 30px;
     }
 }
 
-@media only screen and (max-width:452px) {
+@media only screen and (max-width:818px) {
 
     .donation {
         background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(hands.jpg);
@@ -925,6 +931,20 @@ font-size: 30px;
         background: linear-gradient(#00000096, #ffffff91);
         border-radius: 7px
 
+    }
+
+}
+
+@media only screen and (max-width:870px) {
+
+    .container5{
+        height: fit-content;
+        
+    }
+
+    .donate-1{
+        position: static;
+        
     }
 
 }
