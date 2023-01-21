@@ -8,20 +8,20 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.popup {
+/* .popup {
     width: 400px;
     background-color: #fff;
     border-radius: 6px;
     position: absolute;
     top: 0;
     left: 50%;
-    transform: translate(-50%,-50%) scale(0.1);
+    transform: translate(-50%, -50%) scale(0.1);
     text-align: center;
     padding: 0 30px 30px;
     color: #333;
     visibility: hidden;
     transition: transform 0.4s, top 0.4s;
-}
+} */
 
 .open-popup {
     visibility: visible;
@@ -29,12 +29,12 @@
     transform: translate(-50%, -50%) scale(1);
 }
 
-.popup img {
+/* .popup img {
     width: 100px;
     margin-top: -50px;
     border-radius: 50%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
+} */
 
 .h2-pop {
     font-size: 38px;
@@ -43,7 +43,7 @@
 
 }
 
-.popup button {
+/* .popup button {
     width: 100%;
     margin-top: 50px;
     padding: 10px;
@@ -55,7 +55,7 @@
     border-radius: 4px;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
     cursor: pointer;
-}
+} */
 
 .sign-in {
     border-radius: 30px;
@@ -68,14 +68,124 @@
     font-weight: 500;
 
 }
+/* --------------------hgjhgjhbjh */
 
+.email-sign {
+    margin-bottom: 18px;
+}
+
+.third-sign {
+    display: flex;
+    margin-bottom: 18px;
+    align-items: center;
+    font-size: 14px;
+}
+
+.radio-sign {
+    margin-left: 10px;
+}
+
+.inp-signn {
+    width: 207px;
+    height: 30px;
+    background: transparent;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid black;
+    padding: 5px 10px;
+}
+
+.signup-h2 {
+    text-align: center;
+    margin: 12px auto;
+}
+
+label {
+    margin-left: 10px;
+}
+
+.number-otp,
+.otp {
+
+    margin-bottom: 18px;
+
+}
+
+.already {
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+.second-sign {
+    margin-bottom: 18px;
+}
+
+.popup {
+    width: 450px;
+    height: fit-content;
+    background-color: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+
+    padding: 0 15px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+#submit-sign {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 35px;
+    background: #71d171;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.2s;
+
+
+}
+#submit-sign:hover{
+    background-color:#54ab54;
+}
+#submit-sign:active{
+    background-color:#71d171;
+}
+
+.svg-wrong{
+    position: absolute;
+    right: 0;
+    margin: 5px;
+    cursor: pointer;
+
+}
+
+.f-name{
+
+}
+
+.l-name{
+
+}
 
 
 
 #header {
     width: 100%;
     height: 95vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(hope.jpg);
+    background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.761)), url(hope.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -215,29 +325,23 @@ nav .fa {
     font-size: 80px;
 
     margin: auto 5%;
-    transition: 0.3s;
+  
 
 
 }
 
-.you:hover {
-    transform: scale(1.1);
-    text-shadow: 5px 11PX 8PX black;
-}
+
 
 .you-p {
     color: white;
     font-size: 25px;
     margin: auto 12%;
-    transition: transform 0.3s;
 
 
-}
-
-.you-p:hover {
-    transform: scale(1.1);
 
 }
+
+
 
 .you-div button {
     width: 129px;
@@ -371,7 +475,7 @@ nav .fa {
 
 #portfolio {
     position: relative;
-    box-shadow: 0 -10px 10px rgb(23, 20, 13);
+    box-shadow: 0 8px 11px rgb(23, 20, 13);
 
 
 }
@@ -490,23 +594,23 @@ nav .fa {
 
 
 
-.donation{
+.donation {
     width: 100%;
     height: 80vh;
     background-color: rgb(227, 151, 176);
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
 }
 
-.donate-1{
+.donate-1 {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.pay-btn{
+.pay-btn {
     width: 100%;
     height: 40px;
     border-radius: 3px;
@@ -519,41 +623,43 @@ nav .fa {
     transition: background 0.3s;
 }
 
-.pay-btn:hover{
+.pay-btn:hover {
     background: #46a046;
 }
-.pay-btn:active{
+
+.pay-btn:active {
     background: #57c757;
 }
 
-.donate-2{
+.donate-2 {
     display: flex;
     align-items: center;
     justify-content: center;
 
 }
 
-.donate-img{
+.donate-img {
     width: 400px;
     height: 600px;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(hands.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.714), rgba(0, 0, 0, 0.709)), url(hands.jpg);
     background-position: center;
     background-size: cover;
 }
 
-.donate-form{
+.donate-form {
     height: 550px;
     width: 400px;
     background: #fff;
- 
+
 }
 
-.pay{
+.pay {
     width: 130px;
     display: block;
     margin: auto;
     margin-top: 12px;
 }
+
 .input-field {
     background-color: #eaeaea;
     margin: 15px 0;
@@ -565,28 +671,29 @@ nav .fa {
     overflow: hidden;
 
 }
+
 .input-field i {
     margin-left: 15px;
     color: #999;
 }
 
-.input-field img{
+.input-field img {
     margin-left: 15px;
     width: 25px;
-    
+
 
 }
 
-.inp-cvv{
+.inp-cvv {
     width: 174px;
 }
 
 
-.form-details{
+.form-details {
     padding: 12px 30px;
 }
 
-.form-details hr{
+.form-details hr {
     text-align: center;
     display: block;
     margin: auto;
@@ -601,10 +708,53 @@ nav .fa {
     padding: 18px 15px;
 }
 
-.inp-cardnum{
+.inp-cardnum {
     padding: 18px 10px;
 
 }
+
+.donate-helping{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px ;
+    padding-top: 150px;
+}
+
+.see-help{
+    margin-top: 15px;
+    width: 100px;
+    height: 45px;
+    border-radius: 30px;
+    border: none;
+    background: #228b22;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s;
+    
+}
+
+.see-help:hover{
+    background-color:#579e57;
+    
+}
+.see-help:active{
+    background-color:#228b22;
+
+}
+
+.donate-texts{
+    color: white;
+}
+
+.text-h2{
+    font-size: 44px;
+}
+.text-h4{
+    font-size: 23px;
+}
+
 
 
 
@@ -715,6 +865,10 @@ font-size: 30px;
         margin: auto;
     }
 
+    .l-name{
+        margin-top: 18px;
+    }
+
 
 
 
@@ -737,28 +891,30 @@ font-size: 30px;
 
 @media only screen and (max-width:700px) {
 
-    .popup{
+    .popup {
         width: 300px;
     }
 }
 
 @media only screen and (max-width:452px) {
 
-    .donate-img{
+    .donation {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(hands.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .donate-img {
         display: none;
     }
-    .donate-form{
-        width: 350px;
+
+    .donate-form {
+
         height: fit-content;
-    }
+        width: 325px;
+        background: linear-gradient(#00000096, #ffffff91);
+        border-radius: 7px
 
-}
-@media only screen and (max-width:454px) {
-
-
-    .donate-form{
-        width: 300px ;
-        
     }
 
 }
