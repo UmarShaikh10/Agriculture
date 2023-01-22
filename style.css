@@ -389,6 +389,7 @@ nav .fa {
     background-size: cover;
     background-attachment: fixed;
     padding: 40px 0;
+
 }
 
 .companies h2 {
@@ -483,7 +484,7 @@ nav .fa {
 #portfolio {
     position: relative;
     box-shadow: 0 8px 11px rgb(23, 20, 13);
-
+   
 
 }
 
@@ -498,7 +499,7 @@ nav .fa {
     border-radius: 10px;
     position: relative;
     overflow: hidden;
-    box-shadow: 5px 9px 13px #ab7777;
+    box-shadow: 10px 11px 18px #000000;
 }
 
 
@@ -594,8 +595,10 @@ nav .fa {
 
 .container5 {
     padding: 10px 5%;
-    background-color: wheat;
+    background-color: white;
     height: fit-content;
+ 
+
 }
 
 /* ------------------- Donation ------------ */
@@ -766,6 +769,57 @@ nav .fa {
 }
 .text-h4{
     font-size: 23px;
+}
+
+
+/* ---------------- Review -------------- */
+
+
+.review{
+    height: fit-content;
+    width: 100%;
+    background-color: darkgoldenrod;
+    color: white;
+}
+.review-sub{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+   
+
+}
+
+
+
+.review-box{
+    background-color: #094e1a;
+    width: 450px;
+    padding: 10px;
+    margin-top: 45px;
+    border-radius: 43px;
+}
+
+.review-head{
+    border-bottom: 1px solid white;
+    margin-left: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.review-heading{
+    display: flex;
+}
+
+.main-review{
+    margin-top: 8px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.review-heading img{
+    border-radius: 50%;
+    width: 60px;
 }
 
 
