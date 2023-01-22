@@ -93,17 +93,17 @@
 
 .inp-signn {
     width: 207px;
-    height: 30px;
-    background: transparent;
-    border-radius: 5px;
+    height: 38px;
+    background: rgba(128, 128, 128, 0.169);
+    border-radius: 2px;
     outline: none;
-    border: 1px solid black;
+    border: none;
     padding: 5px 10px;
 }
 
 .signup-h2 {
     text-align: center;
-    margin: 12px auto;
+    margin: 24px auto;
 }
 
 label {
@@ -595,7 +595,7 @@ nav .fa {
 .container5 {
     padding: 10px 5%;
     background-color: wheat;
-    height: 123vh;
+    height: fit-content;
 }
 
 /* ------------------- Donation ------------ */
@@ -604,8 +604,8 @@ nav .fa {
 
 .donation {
     width: 100%;
-    height: 90vh;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(waterfruit.jpg);
+    height: fit-content;
+    background: linear-gradient(rgba(0, 0, 0, 0.862), rgba(0, 0, 0, 0.676)), url(waterfruit.jpg);
     background-position: center;
     background-size: cover;
     display: flex;
@@ -619,7 +619,7 @@ nav .fa {
     align-items: center;
     justify-content: center;
     position: relative;
-    top: -336px;
+
 }
 
 .pay-btn {
@@ -653,7 +653,7 @@ nav .fa {
 .donate-img {
     width: 400px;
     height: 600px;
-    background: linear-gradient(rgba(0, 0, 0, 0.714), rgba(0, 0, 0, 0.709)), url(hands.jpg);
+    background: transparent;
     background-position: center;
     background-size: cover;
 }
@@ -661,7 +661,8 @@ nav .fa {
 .donate-form {
     height: 550px;
     width: 400px;
-    background: #fff;
+    background: rgba(255, 255, 255, 14%);
+    backdrop-filter: blur(2px);
 
 }
 
@@ -865,11 +866,15 @@ font-size: 30px;
     .comp-info {
         border-radius: 5px;
         margin: 10px;
-        margin: 15px 0;
+        margin: 15px 15px;
     }
 
     .companies h2 {
         font-size: 34px;
+    }
+
+    .comp-info p{
+        font-size: 14px;
     }
 
     .more {
@@ -918,6 +923,7 @@ font-size: 30px;
         background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(hands.jpg);
         background-position: center;
         background-size: cover;
+        padding: 40px 0;
     }
 
     .donate-img {
@@ -929,7 +935,8 @@ font-size: 30px;
         height: fit-content;
         width: 325px;
         background: linear-gradient(#00000096, #ffffff91);
-        border-radius: 7px
+        border-radius: 7px;
+        backdrop-filter: blur(7px);
 
     }
 
