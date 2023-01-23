@@ -780,12 +780,15 @@ nav .fa {
     width: 100%;
     background-color: darkgoldenrod;
     color: white;
+    padding-bottom: 28px;
+   
 }
 .review-sub{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
+
    
 
 }
@@ -796,8 +799,9 @@ nav .fa {
     background-color: #094e1a;
     width: 450px;
     padding: 10px;
-    margin-top: 45px;
+    
     border-radius: 43px;
+    box-shadow: 7px 7px 12px black;
 }
 
 .review-head{
@@ -809,6 +813,7 @@ nav .fa {
 
 .review-heading{
     display: flex;
+    align-items: center;
 }
 
 .main-review{
@@ -822,6 +827,31 @@ nav .fa {
     width: 60px;
 }
 
+.rev-h3{
+
+}
+
+
+.star1{
+    margin-left: 87px;
+    
+}
+.star2{
+    margin-left: 50px;
+
+}
+.star3{
+    margin-left: 89px;
+
+}
+.star4{
+    margin-left: 102px;
+}
+
+.str{
+    font-size: 28px;
+    color: yellow;
+}
 
 
 
@@ -894,7 +924,7 @@ font-size: 30px;
     }
 
     nav ul li a:active {
-        color: rgb(215, 204, 204);
+        color: rgb(19, 1, 1);
 
     }
 
@@ -1006,6 +1036,43 @@ font-size: 30px;
     .donate-1{
         position: static;
         
+    }
+
+}
+
+@media only screen and (max-width:494px) {
+    .review-box{
+        width: 380px;
+        margin: 20px;
+        
+    }
+    .rev-h3{
+        font-size: 16px;
+    }
+
+    .rev-p{
+        font-size: 13px;
+    }
+
+    .str{
+        font-size: 22px;
+    }
+
+    .star1{
+        margin-left: 5px;
+        
+    }
+    .star2{
+        margin-left: 5px;
+
+    }
+    .star3{
+        margin-left: 5px;
+
+    }
+    .star4{
+        margin-left: 5px;
+
     }
 
 }
