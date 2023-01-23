@@ -542,7 +542,7 @@ nav .fa {
     text-align: center;
     margin: 3% auto;
     color: black;
-    font-size: 59px;
+    font-size: 49px;
     text-shadow: 4px 4px 7px #584e4e;
 }
 
@@ -885,9 +885,9 @@ font-size: 30px;
 } */
 }
 
-@media only screen and (max-width:500px) {
+@media only screen and (max-width:355px) {
     .sub-title{
-        font-size: 35px;
+        font-size: 45px;
     }
 }
 
