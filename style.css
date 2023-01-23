@@ -545,26 +545,29 @@ nav .fa {
     color: #163c16;
     font-size: 55px;
     font-weight: 400;
+    margin-top: 40px;
 
-  
+
 }
 
 .hr-title{
-    height: 7px;
+    height: 13px;
     background: #163c16;
-    width: 59%;
+    width: 79%;
     margin-top: 4px;
     border: none;
     
 }
 
 .sub-title2{
-    margin-left: 20px;
+    margin-left: 70px;
+    
 
 }
 
 .hr-title2{
-    margin-left: 20px;
+    margin-left: 70px;
+    width: 75%;
 
 }
 
@@ -637,6 +640,7 @@ nav .fa {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 10%;
 
 }
 
@@ -687,8 +691,8 @@ nav .fa {
 .donate-form {
     height: 550px;
     width: 400px;
-    background: rgba(255, 255, 255, 14%);
-    backdrop-filter: blur(2px);
+    background: rgba(255, 255, 255, 20%);
+    backdrop-filter: blur(3px);
 
 }
 
@@ -832,6 +836,11 @@ nav .fa {
     
     border-radius: 16px;
     box-shadow: 7px 7px 12px black;
+    transition: background 0.3s;
+}
+
+.review-box:hover{
+    background-color:#083914;
 }
 
 .review-head{
@@ -858,9 +867,7 @@ nav .fa {
     width: 60px;
 }
 
-.rev-h3{
 
-}
 
 
 .star1{
@@ -882,7 +889,9 @@ nav .fa {
 .str{
     font-size: 28px;
     color: yellow;
+    cursor: pointer;
 }
+
 
 
 
@@ -901,25 +910,15 @@ nav .fa {
     }
 
 
-    /* .header-text{
-margin-top: 100%;
-font-size: 16px;
-}
 
-
-
-.header-text h1{
-
-font-size: 30px;
-
-
-} */
 }
 
 @media only screen and (max-width:355px) {
     .sub-title{
-        font-size: 45px;
+        font-size: 32px;
     }
+
+ 
 }
 
 
@@ -1075,14 +1074,35 @@ font-size: 30px;
         
     }
 
+    .sub-review2{
+        margin-top: -50px;
+    }
+
 }
 
 @media only screen and (max-width:510px) {
 
     .hr-title{
-        width: 76%;
+        width: 48%;
+        height: 4px;
     }
 
+    .hr-title2{
+        margin-left: 30px;
+        height: 4px;
+    }
+
+    .sub-title{
+        margin-left: ;
+        font-size: 40px
+    }
+
+    .sub-title2{
+        margin-left:30px ;
+        font-size: 40px;
+    }
+
+ 
 }
 
 @media only screen and (max-width:494px) {
