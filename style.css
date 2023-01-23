@@ -885,6 +885,12 @@ font-size: 30px;
 } */
 }
 
+@media only screen and (max-width:355px) {
+    .sub-title{
+        font-size: 45px;
+    }
+}
+
 
 
 @media only screen and (max-width:782px) {
@@ -979,12 +985,6 @@ font-size: 30px;
 
 
 
-}
-
-@media only screen and (max-width:355px) {
-    .sub-title{
-        font-size: 49px;
-    }
 }
 
 @media only screen and (max-width:700px) {
