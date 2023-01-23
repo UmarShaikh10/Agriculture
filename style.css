@@ -539,12 +539,23 @@ nav .fa {
 }
 
 .sub-title {
-    text-align: center;
-    margin: 3% auto;
-    color: black;
-    font-size: 49px;
-    text-shadow: 4px 4px 7px #584e4e;
+   
+    margin-top: 22px;
+    margin-bottom: 10px;
+    color: #163c16;
+    font-size: 55px;
+    font-weight: 400;
+  
 }
+
+.hr-title{
+    height: 7px;
+    background: #163c16;
+    width: 59%;
+    margin-top: 4px;
+    border: none;
+}
+
 
 
 
@@ -594,7 +605,7 @@ nav .fa {
 }
 
 .container5 {
-    padding: 10px 5%;
+    padding: 57px 5%;
     background-color: white;
     height: fit-content;
  
@@ -780,7 +791,7 @@ nav .fa {
     width: 100%;
     background-color: darkgoldenrod;
     color: white;
-    padding-bottom: 28px;
+    padding: 57px;
    
 }
 .review-sub{
@@ -788,8 +799,14 @@ nav .fa {
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    padding: 20px;
 
    
+
+}
+
+.sub-review{
+    margin: 50px auto;
 
 }
 
@@ -800,7 +817,7 @@ nav .fa {
     width: 450px;
     padding: 10px;
     
-    border-radius: 43px;
+    border-radius: 16px;
     box-shadow: 7px 7px 12px black;
 }
 
@@ -809,6 +826,7 @@ nav .fa {
     margin-left: 8px;
     display: flex;
     justify-content: space-between;
+    padding-bottom: 10px;
 }
 
 .review-heading{
@@ -1042,6 +1060,14 @@ font-size: 30px;
     .donate-1{
         position: static;
         
+    }
+
+}
+
+@media only screen and (max-width:510px) {
+
+    .hr-title{
+        width: 76%;
     }
 
 }
