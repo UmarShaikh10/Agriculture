@@ -268,7 +268,7 @@ nav ul li a:hover::after {
     font-size: 14px;
 }
 
-span {
+.sign-in span {
     width: 0;
     height: 100%;
     background: #18ad18;
@@ -278,6 +278,7 @@ span {
     z-index: -1;
     transition: 0.5s;
     border-radius: 30px;
+    
 }
 
 .sign-in:hover {
@@ -807,7 +808,7 @@ nav .fa {
     width: 100%;
     background-color: darkgoldenrod;
     color: white;
-    padding-top:40px;
+    padding:40px;
    
    
 }
@@ -894,6 +895,94 @@ nav .fa {
 
 
 
+/* -----------About------------- */
+
+.contain-about{
+    padding: 10px 10%;
+}
+
+#about{
+    padding: 8px 0;
+
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1{
+    flex-basis: 35%;
+}
+
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.about-col-2{
+    flex-basis: 60%;
+}
+
+.sub-title-about{
+    font-size: 60px;
+    font-weight: 600;
+    color: #333;
+}
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+
+}
+
+.tab-links{
+    margin-right: 50px;
+    font-style: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    transition: 0.3s;
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #0e5d1d;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+
+.tab-links.active-link::after{
+    width: 50%;
+}
+
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span{
+    color: #083914;
+    font-size: 14px;
+}
+
+.tab-contents{
+    display: none;
+    transition: 0.3s;
+}
+
+.tab-contents.active-tab{
+    display: block;
+    transition: 0.3s;
+
+}
 
 
 
@@ -938,7 +1027,7 @@ nav .fa {
         border-radius: none;
     }
 
-    span {
+    .sign-in span {
         border-radius: none;
     }
 
@@ -1093,7 +1182,7 @@ nav .fa {
     }
 
     .sub-title{
-        margin-left: ;
+     
         font-size: 40px
     }
 
@@ -1103,6 +1192,12 @@ nav .fa {
     }
 
  
+}
+
+@media only screen and (max-width:890px) {
+    .review-box{
+        margin: 16px 0;
+    }
 }
 
 @media only screen and (max-width:494px) {
@@ -1139,5 +1234,43 @@ nav .fa {
         margin-left: 5px;
 
     }
+
+}
+
+@media only screen and (max-width:400px) {
+
+
+    .sub-title-about{
+        font-size: 40px;
+    }
+
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+
+    .about-col-1{
+        margin-bottom: 30px;
+
+    }
+    .about-col-2{
+        font-size: 14px;
+
+    }
+
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+
+
+
+
+
+
+
+
+
+
+
 
 }
