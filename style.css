@@ -178,13 +178,6 @@ label {
 
 }
 
-.f-name{
-
-}
-
-.l-name{
-
-}
 
 
 
@@ -898,7 +891,7 @@ nav .fa {
 /* -----------About------------- */
 
 .contain-about{
-    padding: 10px 10%;
+    padding: 5% 10%;
 }
 
 #about{
@@ -982,6 +975,29 @@ nav .fa {
     display: block;
     transition: 0.3s;
 
+}
+
+
+/* ------------------ Google Map-------------- */
+
+.googleMap{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.search-google{
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+
+iframe{
+    width: 100%;
+    height: 500px;
+   
 }
 
 
@@ -1203,7 +1219,7 @@ nav .fa {
 @media only screen and (max-width:494px) {
     .review-box{
         width: 380px;
-        margin: 20px;
+        margin: 7px 0;
         
     }
     .rev-h3{
@@ -1233,6 +1249,10 @@ nav .fa {
     .star4{
         margin-left: 5px;
 
+    }
+
+    .search-google{
+        font-size: 35px;
     }
 
 }
