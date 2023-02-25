@@ -634,7 +634,7 @@ nav .fa {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10%;
+    padding: 5%;
 
 }
 
@@ -660,7 +660,7 @@ nav .fa {
 }
 
 .pay-btn:hover {
-    background: #46a046;
+    background: #a75b24;
 }
 
 .pay-btn:active {
@@ -978,11 +978,16 @@ nav .fa {
 }
 
 
+.qrimg{
+    width: 30px;
+}
+
+
 /* ------------------ Google Map-------------- */
 
 .googleMap{
     height: 70vh;
-    width: 100%;
+    width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -999,6 +1004,19 @@ iframe{
     height: 500px;
    
 }
+
+
+
+
+
+/* ----------------- footer -------------- */
+
+.footer{
+    height: 400px;
+    background-color: black;
+    width: 100%;
+}
+   
 
 
 
