@@ -335,12 +335,18 @@ nav .fa {
 
 .you-p {
     color: white;
-    font-size: 25px;
+    font-size: 20px;
     margin: auto 12%;
 
 
 
 }
+.hr-divider{
+    display: none;
+
+}
+
+
 
 
 
@@ -1005,6 +1011,10 @@ iframe{
    
 }
 
+#qrimmg{
+    width: 145px;
+}
+
 
 
 
@@ -1223,6 +1233,13 @@ iframe{
     .sub-title2{
         margin-left:30px ;
         font-size: 40px;
+    }
+    .hr-divider{
+        width: 129px;
+        left: 32%;
+        position: relative;
+        display: block;
+    
     }
 
  
