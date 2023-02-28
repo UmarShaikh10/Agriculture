@@ -48,23 +48,26 @@
                     </svg>
 
                     <h2 class="signup-h2">Sign Up</h2>
-                    <form name='submit-to-google-sheet' id="cleared">
+                    <form action="index2.php" method="post" id="cleared">
                         <div class="first-sign">
                             <div class="second-sign">
-                                <input type="text" name="FirstName" class="inp-signn f-name" placeholder="First Name">
-                                <input type="text" name="LastName" class="inp-signn l-name" placeholder="Last Name">
+                                <input type="text" name="fname" id="fname" class="inp-signn f-name"
+                                    placeholder="First Name">
+                                <input type="text" name="lname" id="lname" class="inp-signn l-name"
+                                    placeholder="Last Name">
                             </div>
                             <div class="third-sign">
-                                <input type="email" name="Email" class="inp-signn email-sign" placeholder="Email">
+                                <input type="email" name="email" id="email" class="inp-signn email-sign"
+                                    placeholder="Email">
                                 <p style="padding-bottom: 20px; margin-left: 6px;">@gmail.com</p>
                             </div>
                             <div class="third-sign">
-                                <p><b>Gender:</b> </p>
-                                <label for="">Male</label><input type="radio" name="" id="" class="radio-sign">
-                                <label for="">Female</label><input type="radio" name="" id="" class="radio-sign">
-                                <label for="">Prefer not to say</label>
+
+                                <input type="text" name="gender" id="gender" class="inp-signn gender"
+                                    placeholder="Gender">
+
                             </div>
-                            <input type="number" name="Number" class="inp-signn number-otp"
+                            <input type="number" name="numberr" id="numberr" class="inp-signn number-otp"
                                 placeholder="Enter your Number">
                             <input type="number" class="inp-signn otp" placeholder="6 Digit OTP">
                             <p class="already">Already have an Account : <a href="#">Sign in</a></p>
@@ -77,6 +80,9 @@
 
             </nav>
 
+            <!-- INSERT INTO `user` (`First Name`, `Last Name`, `Email`, `Gender`, `Number`) VALUES ('Mohammad Umar', 'Shaikh', 'abc@gmail.com', 'Male', '1234567890'); -->
+
+
 
 
 
@@ -84,12 +90,24 @@
         </div>
         <div class="you-div">
 
-            <h1 class="you">You</h1>
-            <p class="you-p">Discover the Power of Technology in Agriculture with <b>FarmConnect</b></p>
+            <h1 class="you">Farm<span class="connect">Connect</span></h1>
+            <div class="dividebyCircle">
+                <div class="dividing line"></div>
+                <div class="dividing circle"></div>
+                <div class="dividing line"></div>
+            </div>
+            <p class="you-p">Discover the Power of Technology in Agriculture with <b class="farmconnect">Farm<span
+                        class="connect">Connect</span></b></p>
+                        <div class="dividebyCircle">
+                            <div class="dividing line line2"></div>
+                        
+                         
+                        </div>
             <hr class="hr-divider">
+      
             <p class="you-p">Empowering Farmers with Innovative Digital Solutions</p>
             <hr class="hr-divider">
-                <p class="you-p">A Seamless Journey with FarmConnect</p>
+            <p class="you-p">A Seamless Journey with FarmConnect</p>
             <button>Explore</button>
         </div>
 
@@ -177,7 +195,8 @@
                     <img src="person1.jpg">
                     <div class="layer">
                         <h3>Pest management</h3>
-                        <p>Farmers must protect their crops from pests, such as insects or rodents, that can damage or destroy them</p>
+                        <p>Farmers must protect their crops from pests, such as insects or rodents, that can damage or
+                            destroy them</p>
                         <a href=""><i class="fa fa-external-link"></i></a>
                     </div>
                 </div>
@@ -185,7 +204,8 @@
                     <img src="person2.jpg">
                     <div class="layer">
                         <h3>Soil preparation</h3>
-                        <p>Before planting, farmers must prepare the soil by tilling, leveling, and adding organic matter or fertilizers to ensure that the soil is healthy and fertile.</p>
+                        <p>Before planting, farmers must prepare the soil by tilling, leveling, and adding organic
+                            matter or fertilizers to ensure that the soil is healthy and fertile.</p>
                         <a href=""><i class="fa fa-external-link"></i></a>
                     </div>
                 </div>
@@ -193,7 +213,8 @@
                     <img src="person3.jpg" class="imgperson3">
                     <div class="layer">
                         <h3>Irrigation</h3>
-                        <p>Depending on the climate and the availability of water, farmers may need to irrigate their crops to ensure that they get enough moisture to grow.</p>
+                        <p>Depending on the climate and the availability of water, farmers may need to irrigate their
+                            crops to ensure that they get enough moisture to grow.</p>
                         <a href=""><i class="fa fa-external-link"></i></a>
                     </div>
                 </div>
@@ -302,7 +323,10 @@
 
                 </div>
 
-                <p class="main-review">I really appreciate the detailed information on soil management and nutrient requirements. The soil maps were very helpful in identifying the best crops to grow in my area. However, I found some of the language to be a bit technical and hard to understand. It would be great if you could consider simplifying the language and providing more examples.</p>
+                <p class="main-review">I really appreciate the detailed information on soil management and nutrient
+                    requirements. The soil maps were very helpful in identifying the best crops to grow in my area.
+                    However, I found some of the language to be a bit technical and hard to understand. It would be
+                    great if you could consider simplifying the language and providing more examples.</p>
 
             </div>
             <div class="review-box">
@@ -325,7 +349,10 @@
 
                 </div>
 
-                <p class="main-review">I found the website to be very informative and well-organized. The crop-specific information was particularly useful and helped me improve my yields. However, I noticed some broken links and missing pages, which made it hard to find some information. It would be great if you could fix these issues and ensure that all pages are up to date."</p>
+                <p class="main-review">I found the website to be very informative and well-organized. The crop-specific
+                    information was particularly useful and helped me improve my yields. However, I noticed some broken
+                    links and missing pages, which made it hard to find some information. It would be great if you could
+                    fix these issues and ensure that all pages are up to date."</p>
 
             </div>
 
@@ -353,7 +380,11 @@
 
                 </div>
 
-                <p class="main-review">I really appreciate the variety of resources on this website, from articles and videos to interactive tools. However, I noticed that the search function can be a bit frustrating. Sometimes it doesn't return the most relevant results, or it misses some of the content. It would be great if you could work on improving the search feature to make it more accurate and user-friendly.</p>
+                <p class="main-review">I really appreciate the variety of resources on this website, from articles and
+                    videos to interactive tools. However, I noticed that the search function can be a bit frustrating.
+                    Sometimes it doesn't return the most relevant results, or it misses some of the content. It would be
+                    great if you could work on improving the search feature to make it more accurate and user-friendly.
+                </p>
 
             </div>
             <div class="review-box">
@@ -376,7 +407,10 @@
 
                 </div>
 
-                <p class="main-review">I really like the layout and design of the website, but I found some of the pages to be a bit slow to load. This can be frustrating when you're trying to access information quickly. It would be great if you could optimize the site speed to ensure a smooth and fast browsing experience.</p>
+                <p class="main-review">I really like the layout and design of the website, but I found some of the pages
+                    to be a bit slow to load. This can be frustrating when you're trying to access information quickly.
+                    It would be great if you could optimize the site speed to ensure a smooth and fast browsing
+                    experience.</p>
 
             </div>
 
@@ -395,7 +429,11 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title-about">About Me</h1>
-                    <p>Manoj's typical day involves a lot of physical work, from checking on his livestock to operating heavy machinery to tend to his fields. He wakes up early in the morning, checks the weather forecast, and then heads out to the barn to feed his cattle and check on their health. He then spends the morning working in the fields, either planting or harvesting his crops, or performing tasks such as tilling or applying fertilizer.</p>
+                    <p>Manoj's typical day involves a lot of physical work, from checking on his livestock to operating
+                        heavy machinery to tend to his fields. He wakes up early in the morning, checks the weather
+                        forecast, and then heads out to the barn to feed his cattle and check on their health. He then
+                        spends the morning working in the fields, either planting or harvesting his crops, or performing
+                        tasks such as tilling or applying fertilizer.</p>
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Material</p>
                         <p class="tab-links" onclick="opentab('experience')">Experience</p>
@@ -434,11 +472,11 @@
                     </div>
                     <div class="tab-contents" id="QR">
                         <ul>
-                       <img id="qrimmg" src="agr.png" alt="">
+                            <img id="qrimmg" src="agr.png" alt="">
                         </ul>
                     </div>
                 </div>
-                
+
 
             </div>
 
@@ -526,7 +564,7 @@
                 .catch(error => console.error('Error!', error.message))
         })
 
-        
+
 
         function clearForm() {
             document.getElementById('cleared').clearForm();
