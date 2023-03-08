@@ -6,24 +6,13 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
- 
+
+
     
 }
 
-/* .popup {
-    width: 400px;
-    background-color: #fff;
-    border-radius: 6px;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0.1);
-    text-align: center;
-    padding: 0 30px 30px;
-    color: #333;
-    visibility: hidden;
-    transition: transform 0.4s, top 0.4s;
-} */
+
+
 
 .open-popup {
     visibility: visible;
@@ -37,12 +26,7 @@
     box-shadow: 4px 8px 15px black;
 }
 
-/* .popup img {
-    width: 100px;
-    margin-top: -50px;
-    border-radius: 50%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-} */
+
 
 .h2-pop {
     font-size: 38px;
@@ -51,19 +35,7 @@
 
 }
 
-/* .popup button {
-    width: 100%;
-    margin-top: 50px;
-    padding: 10px;
-    background-color: #6fd649;
-    color: #fff;
-    border: 0;
-    outline: none;
-    font-size: 18px;
-    border-radius: 4px;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-} */
+
 
 .sign-in {
     border-radius: 30px;
@@ -328,6 +300,7 @@ nav .fa {
     width: 100%;
     text-align: center;
     margin: 12% auto;
+    height: fit-content;
 
 }
 
@@ -943,6 +916,7 @@ nav .fa {
 
 #about{
     padding: 8px 0;
+    overflow: hidden;
 
 }
 
@@ -1062,13 +1036,162 @@ iframe{
 
 /* ----------------- footer -------------- */
 
-.footer{
-    height: 400px;
-    background-color: black;
+footer{
     width: 100%;
-}
-   
 
+    bottom: 0;
+    background: linear-gradient(to right, #233a1d, #3e1c11);
+    color: #fff;
+    padding: 100px 0 30px;
+  
+    font-size: 13px;
+    line-height: 20px;
+
+}
+
+.row{
+
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+
+}
+
+.col{
+
+    flex-basis: 25%;
+    padding: 10px;
+}
+
+.col:nth-child(2), .col:nth-child(3){
+    flex-basis: 15%;
+}
+
+
+
+.col h3{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+
+}
+
+
+.email-id{
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+
+.footerUl li{
+    list-style: none;
+    margin-bottom: 12px;
+
+}
+
+.footerUl li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.formFooter{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+
+}
+
+
+.formFooter .fa{
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.formFooter input{
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+}
+
+.formFooter button{
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+
+.formFooter button .fa{
+    font-size: 16px;
+    color: #ccc;
+}
+
+.social-icons .fa{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #000;
+    background: #fff;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.hrFooter{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+}
+
+.copyright{
+    text-align: center;
+}
+
+.underline{
+    width: 100%;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    overflow: hidden;
+
+    
+}
+
+
+.underline span{
+    width: 15px;
+    height: 100%;
+    background: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moving 2s linear infinite;
+}
+
+@keyframes moving{
+    0%{
+        left: -20px;
+    }
+    100%{
+        left: 100%;
+    }
+}
 
 
 /* ---------- Responsive --------- */
@@ -1212,7 +1335,7 @@ iframe{
 @media only screen and (max-width:625px) {
 
     .you{
-        font-size: 39px;
+        font-size: 36px;
        
     }
 
