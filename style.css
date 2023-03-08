@@ -1254,6 +1254,14 @@ footer {
 
 }
 
+@media only screen and (max-width:380px) {
+    .social-icons .fa{
+        margin-right: 6px;
+    }
+
+
+}
+
 
 
 @media only screen and (max-width:782px) {
